@@ -64,7 +64,6 @@
         "information": "Sunningdale is welcoming a limited number of visitors from June, subject to any further restrictions due to Coronavirus.",
         "website": "https://www.sunningdale-golfclub.co.uk/",
         "id": 7,
-
     },
     {
         "name": "Nine Bridges",
