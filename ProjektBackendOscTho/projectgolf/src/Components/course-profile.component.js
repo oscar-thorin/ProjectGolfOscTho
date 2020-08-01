@@ -24,7 +24,6 @@ export default class CourseProfile extends Component {
           course_address: response.data.address,
           course_information: response.data.information,
           course_website: response.data.website,
-          course_open: response.data.open,
         });
       })
       .catch(function (error) {
@@ -35,12 +34,35 @@ export default class CourseProfile extends Component {
   render() {
     return (
       <div>
-        <p>name: {this.state.course_name}</p>
-        <p>country: {this.state.course_country}</p>
-        <p>address: {this.state.course_address}</p>
-        <p>website: {this.state.course_website}</p>
-        <p>information: {this.state.course_information}</p>
-        <p>open: {this.state.course_open}</p>
+        <div>
+          <h1 style={{ marginLeft: "10%" }}>{this.state.course_name}</h1>
+          <h3 style={{ marginLeft: "10%" }}> In {this.state.course_country}</h3>
+        </div>
+        <img
+          style={{ paddingTop: "30px" }}
+          src="https://i2.wp.com/livewallpaper.info/wp-content/uploads/2017/08/Green-golf-course-wallpaper-wp4405474.jpg?w=446&h=279&ssl=1"
+        />
+        <div style={{ paddingTop: "30px" }}>
+          <p style={{ marginLeft: "38%", fontSize: "30px" }}>
+            {this.state.course_address}
+          </p>
+          <br />
+          <a
+            href="{this.state.course_website}"
+            style={{
+              fontSize: "30px",
+              textDecoration: "none",
+              marginLeft: "68px",
+            }}
+          >
+            {this.state.course_website}
+          </a>
+          <br />
+          <br />
+          <p style={{ marginLeft: "38%", fontSize: "30px" }}>
+            {this.state.course_information}
+          </p>
+        </div>
       </div>
     );
   }

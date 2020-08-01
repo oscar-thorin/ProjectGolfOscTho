@@ -1,6 +1,13 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+  NavLink,
+  Redirect,
+} from "react-router-dom";
+
+import "./App.css";
 
 import CourseProfile from "./Components/course-profile.component";
 import Welcome from "./Components/welcome.component";
@@ -15,16 +22,21 @@ class App extends Component {
             <div>
               <ul>
                 <li>
-                  <Link to="/">Home</Link>
+                  <NavLink to="/welcome" activeClassName="selected">
+                    Home
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/courses">Courses</Link>
+                  <NavLink to="/courses" activeClassName="selected">
+                    Courses
+                  </NavLink>
                 </li>
               </ul>
             </div>
           </nav>
         </div>
-        <Route path="/" exact component={Welcome} />
+        <Redirect from="/" to="/welcome" />
+        <Route path="/welcome" exact component={Welcome} />
         <Route path="/courses" component={CoursesList} />
         <Route path="/course/:id" component={CourseProfile} />
       </Router>

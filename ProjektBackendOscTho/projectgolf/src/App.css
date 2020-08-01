@@ -1,38 +1,168 @@
-.App {
+/*
+Standard Body styling
+*/
+
+* {
+  background-color: green;
+  color: white;
+  margin: 0px;
+}
+
+/*
+NAVBAR CSS
+*/
+
+nav ul li {
+  display: inline;
+  margin-left: 30px;
+  text-decoration: none;
+  padding: 0px;
+}
+
+nav ul {
+  background-color: green;
+  padding-top: 17px;
+}
+
+nav ul li a {
+  background-color: green;
+  text-decoration: none;
+  font-size: 50px;
+  color: white;
+}
+/* selectedClass so you can see what path you are on */
+.selected {
+  border-bottom: 5px solid white;
+}
+
+nav {
+  height: 100px;
+  width: 100%;
+  background-color: green;
+}
+
+/* 
+NORMAL LIST (DASHBOARD) CSS
+*/
+
+li {
+  margin-left: 40%;
+  padding: 10px;
+}
+
+li a {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+li p {
+  font-size: 20px;
+}
+
+ul li a p {
+  color: blue;
   text-align: center;
+  border: 5px solid white;
+  width: 200px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul {
+  list-style: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* 
+LOGIN CSS
+*/
+
+h1 {
+  margin-left: 38%;
+  margin-top: 25px;
+  font-size: 50px;
+}
+h3 {
+  margin-left: 46%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+input[type="text"] {
+  border: 5px solid #88b04b;
+  background-color: white;
+  color: black;
+  margin-left: 41%;
+  margin-top: 10px;
+  height: 25px;
+  width: 200px;
+}
+
+/* 
+Button styling
+*/
+
+button {
+  border: 5px solid #88b04b;
+  height: 37px;
+  background-color: #88b04b;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.btnlogin {
+  margin-left: 47.5%;
+  margin-top: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btnlist {
+  margin-left: 46.3%;
+  margin-top: 12px;
+}
+
+/* 
+USERPROFILE + USERCOMPONENT
+*/
+
+.usercmid {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 50px;
+}
+
+.profilemid {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+.profilepic {
+  padding-left: 250px;
+  margin: 0 auto;
+}
+
+.profileinfo {
+  padding-top: 25px;
+  padding-left: 250px;
+  margin: 0 auto;
+}
+
+div p {
+  padding-left: 17px;
+}
+
+.btnwrap {
+  margin-top: 12px;
+}
+
+/*
+GOLFCOURSES STYLING
+*/
+.course {
+  width: 100%;
+  height: 75px;
+}
+
+img {
+  height: 250px;
+  width: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+  padding-left: 10%;
+  border-radius: 10px;
 }
