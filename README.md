@@ -1,6 +1,6 @@
 # ProjectGolfOscTho
-### Incase you want to try out the backend, here is recommended data you should send in to the server, one by one.
-### Have fun!
+Incase you want to try out the backend, here is recommended data you should send in to the server, one by one.
+Have fun!
 
 [
     {
